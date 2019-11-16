@@ -1,0 +1,3 @@
+* coalesce，默认是进行减少partition并且不进行shuffle。当第二个参数为true的时候可以进行扩大partition，并且进行了shuffle
+
+* repartition底层调用的是coalesce，第二个参数传递的是true。用于少分区变多分区
